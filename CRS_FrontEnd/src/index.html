@@ -1,0 +1,2336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="asserts/css/bootstrap.min.css" rel="stylesheet">
+    <link href="asserts/css1/normalize.css" rel="stylesheet">
+    <link href="ass/css/carimg.css" rel="stylesheet">
+   <link href="Login.html">
+   <style>
+        #Homebar{
+            position: fixed;
+            display: block;
+
+            height: 80px;
+            width: 100%;
+            box-shadow: 5px 5px 20px 1px grey;
+            z-index: 2;
+            background-image: linear-gradient(orange,black);
+        }
+
+        .object {
+            animation: MoveUpDown 1s linear infinite;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+
+        @keyframes MoveUpDown {
+            0%, 100% {
+                bottom: 0;
+            }
+            50% {
+                bottom: 100px;
+            }
+        }
+
+       /* @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');*/
+       /* * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }*/
+
+
+        .waviy {
+            position: relative;
+          font-family: "Aachen BT";
+            font-size: 30px;
+        }
+        .waviy span {
+            font-family: "Aachen BT";
+           /* font-family: 'Alfa Slab One', cursive;*/
+            position: relative;
+            display: inline-block;
+            color:navy;
+            text-transform: uppercase;
+            animation: waviy 1s infinite;
+            animation-delay: calc(.1s * var(--i));
+
+        }
+        @keyframes waviy {
+            0%,40%,100% {
+                transform: translateY(0)
+            }
+            20% {
+                transform: translateY(-20px)
+            }
+        }
+    </style>
+
+
+
+
+
+</head>
+<body>
+
+
+<div class="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-12" id="dashbord" style="display: block">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary mb-3" id="Homebar" >
+
+        <a class="navbar-brand" href="#">Car Rental  System</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+       <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav mr-auto">
+
+
+           <li class="nav-item" id="ds"  >
+                    <a class="nav-link" href="#" >
+                        AdminOnly
+                    </a>
+
+                </li>
+                <li class="nav-item"  >
+                    <a class="nav-link" href="#carsection">Cars</a>
+
+                </li>
+                <li class="nav-item"  >
+                    <a class="nav-link" href="Login.html" >Login</a>
+
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+    <img src="asserts/img/slider.jpg" height="600"  width="100%">
+
+
+<section id="carsection" style="background-color: black">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+            <div class="card" style="background-color: black">
+
+                <div class="container">
+                    <img src="asserts/img/car2.jpg " alt="Avatar" class="image" >
+                  <h5 class="card-title" style="text-decoration-color: white"> BMW 6-Series </h5>
+                    <div class="overlay">
+                        <div class="text">
+                            <h1 class="h1text">Book your car now</h1>
+                            <img src="asserts/img/car2.jpg " alt="Avatar" class="image" >
+                           <h5 class="card-title" style="text-decoration-color: white">  </h5>
+                              <h6 class="h6"> $20 DAY</h6>
+                            <button class="Bbutton">Booking</button>
+                        </div>
+                    </div>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                        <p>Type-mini</p>
+                        <p>No of passengers-4</p>
+                        <p>Transmission-Auto</p>
+                        <p>Fuel-Petrol</p>
+                        <p>Free Km for a Day-200</p>
+                        <p>Free Km for a Month-3000</p>
+                    </h6>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+         <div class="card" style="background-color: black">
+
+               <div class="container">
+                   <img src="asserts/img/car3.jpg " alt="Avatar" class="image" width="299">
+                   <h5 class="card-title">Hyundai Creta</h5>
+                   <div class="overlay">
+                       <div class="text">
+                           <h1 class="h1text">Book your car now</h1>
+                           <img src="asserts/img/car3.jpg " alt="Avatar" class="image" width="299">
+                           <h6 class="h6"> $20 DAY</h6>
+                           <button class="Bbutton">Booking</button>
+                       </div>
+                   </div>
+                   <h6 class="card-subtitle mb-2 text-muted">
+                       <p>Type-mini</p>
+                       <p>No of passengers-4</p>
+                       <p>Transmission-Auto</p>
+                       <p>Fuel-Petrol</p>
+                       <p>Free Km for a Day-200</p>
+                       <p>Free Km for a Month-3000</p>
+                   </h6>
+               </div>
+
+           </div>
+
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+            <div class="card" style="background-color: black">
+
+                <div class="container">
+                    <img src="asserts/img/car4.jpg " alt="Avatar" class="image" height="164">
+                    <h5 class="card-title">BMW 6-Series </h5>
+                    <div class="overlay">
+                        <div class="text">
+                            <h1 class="h1text">Book your car now</h1>
+                            <img src="asserts/img/car4.jpg " alt="Avatar" class="image" >
+                            <h6 class="h6"> $20 DAY</h6>
+                            <button class="Bbutton">Booking</button>
+                        </div>
+                    </div>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                        <p>Type-mini</p>
+                        <p>No of passengers-4</p>
+                        <p>Transmission-Auto</p>
+                        <p>Fuel-Petrol</p>
+                        <p>Free Km for a Day-200</p>
+                        <p>Free Km for a Month-3000</p>
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+            <div class="card" style="background-color: black">
+
+                <div class="container">
+                    <img src="asserts/img/car5.jpg " alt="Avatar" class="image" height="164" >
+                    <h5 class="card-title">BMW 6-Series </h5>
+                    <div class="overlay">
+                        <div class="text">
+                            <h1 class="h1text">Book your car now</h1>
+                            <img src="asserts/img/car5.jpg " alt="Avatar" class="image"  height="164">
+                            <h6 class="h6"> $20 DAY</h6>
+                            <button class="Bbutton">Booking</button>
+                        </div>
+                    </div>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                        <p>Type-mini</p>
+                        <p>No of passengers-4</p>
+                        <p>Transmission-Auto</p>
+                        <p>Fuel-Petrol</p>
+                        <p>Free Km for a Day-200</p>
+                        <p>Free Km for a Month-3000</p>
+                    </h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+            <div class="card" style="background-color: black">
+
+                <div class="container">
+                    <img src="asserts/img/car6.jpg " alt="Avatar" class="image" height="164">
+                    <h5 class="card-title">BMW 6-Series </h5>
+                    <div class="overlay">
+                        <div class="text">
+                            <h1 class="h1text">Book your car now</h1>
+                            <img src="asserts/img/car6.jpg " alt="Avatar" class="image" height="164" >
+                            <h6 class="h6"> $20 DAY</h6>
+                            <button class="Bbutton">Booking</button>
+                        </div>
+                    </div>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                        <p>Type-mini</p>
+                        <p>No of passengers-4</p>
+                        <p>Transmission-Auto</p>
+                        <p>Fuel-Petrol</p>
+                        <p>Free Km for a Day-200</p>
+                        <p>Free Km for a Month-3000</p>
+                    </h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+            <div class="card" style="background-color: black">
+
+                <div class="container">
+                    <img src="asserts/img/car7.jpg " alt="Avatar" class="image" height="164">
+                    <h5 class="card-title">BMW 6-Series </h5>
+                    <div class="overlay">
+                        <div class="text">
+                            <h1 class="h1text">Book your car now</h1>
+                            <img src="asserts/img/car7.jpg " alt="Avatar" class="image" height="164" >
+                            <h6 class="h6"> $20 DAY</h6>
+                            <button class="Bbutton">Booking</button>
+                        </div>
+                    </div>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                        <p>Type-mini</p>
+                        <p>No of passengers-4</p>
+                        <p>Transmission-Auto</p>
+                        <p>Fuel-Petrol</p>
+                        <p>Free Km for a Day-200</p>
+                        <p>Free Km for a Month-3000</p>
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+            <div class="card" style="background-color: black">
+
+                <div class="container">
+                    <img src="asserts/img/car8.jpg " alt="Avatar" class="image" width="299" height="164">
+                    <h5 class="card-title">BMW 6-Series </h5>
+                    <div class="overlay">
+                        <div class="text">
+                            <h1 class="h1text">Book your car now</h1>
+                            <img src="asserts/img/car8.jpg " alt="Avatar" class="image"  width="299" height="164" >
+                            <h6 class="h6"> $20 DAY</h6>
+                            <button class="Bbutton">Booking</button>
+                        </div>
+                    </div>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                        <p>Type-mini</p>
+                        <p>No of passengers-4</p>
+                        <p>Transmission-Auto</p>
+                        <p>Fuel-Petrol</p>
+                        <p>Free Km for a Day-200</p>
+                        <p>Free Km for a Month-3000</p>
+                    </h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+            <div class="card" style="background-color: black">
+
+                <div class="container">
+                    <img src="asserts/img/car9.jpg " alt="Avatar" class="image" height="164" >
+                    <h5 class="card-title">BMW 6-Series </h5>
+                    <div class="overlay">
+                        <div class="text">
+                            <h1 class="h1text">Book your car now</h1>
+                            <img src="asserts/img/car9.jpg " alt="Avatar" class="image" height="164">
+                            <h6 class="h6"> $20 DAY</h6>
+                            <button class="Bbutton">Booking</button>
+                        </div>
+                    </div>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                        <p>Type-mini</p>
+                        <p>No of passengers-4</p>
+                        <p>Transmission-Auto</p>
+                        <p>Fuel-Petrol</p>
+                        <p>Free Km for a Day-200</p>
+                        <p>Free Km for a Month-3000</p>
+                    </h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+            <div class="card" style="background-color: black">
+
+                <div class="container">
+                    <img src="asserts/img/car10.jpg " alt="Avatar" class="image" width="299">
+                    <h5 class="card-title">BMW 6-Series </h5>
+                    <div class="overlay">
+                        <div class="text">
+                            <h1 class="h1text">Book your car now</h1>
+                            <img src="asserts/img/car10.jpg " alt="Avatar" class="image" width="299" >
+                            <h6 class="h6"> $20 DAY</h6>
+                            <button class="Bbutton">Booking</button>
+                        </div>
+                    </div>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                        <p>Type-mini</p>
+                        <p>No of passengers-4</p>
+                        <p>Transmission-Auto</p>
+                        <p>Fuel-Petrol</p>
+                        <p>Free Km for a Day-200</p>
+                        <p>Free Km for a Month-3000</p>
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+            <div class="card" style="background-color: black">
+
+                <div class="container">
+                    <img src="asserts/img/car11.jpg " alt="Avatar" class="image" height="164">
+                    <h5 class="card-title">BMW 6-Series </h5>
+                    <div class="overlay">
+                        <div class="text">
+                            <h1 class="h1text">Book your car now</h1>
+                            <img src="asserts/img/car11.jpg " alt="Avatar" class="image" height="164">
+                            <h6 class="h6"> $20 DAY</h6>
+                            <button class="Bbutton">Booking</button>
+                        </div>
+                    </div>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                        <p>Type-mini</p>
+                        <p>No of passengers-4</p>
+                        <p>Transmission-Auto</p>
+                        <p>Fuel-Petrol</p>
+                        <p>Free Km for a Day-200</p>
+                        <p>Free Km for a Month-3000</p>
+                    </h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+            <div class="card" style="background-color: black">
+
+                <div class="container">
+                    <img src="asserts/img/car12.jpg " alt="Avatar" class="image" height="164" >
+                    <h5 class="card-title">BMW 6-Series </h5>
+                    <div class="overlay">
+                        <div class="text">
+                            <h1 class="h1text">Book your car now</h1>
+                            <img src="asserts/img/car12.jpg " alt="Avatar" class="image" height="164">
+                            <h6 class="h6"> $20 DAY</h6>
+                            <button class="Bbutton">Booking</button>
+                        </div>
+                    </div>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                        <p>Type-mini</p>
+                        <p>No of passengers-4</p>
+                        <p>Transmission-Auto</p>
+                        <p>Fuel-Petrol</p>
+                        <p>Free Km for a Day-200</p>
+                        <p>Free Km for a Month-3000</p>
+                    </h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+            <div class="card">
+                <div class="card" style="background-color: black">
+
+                    <div class="container">
+                        <img src="asserts/img/car2.jpg " alt="Avatar" class="image" >
+                        <h5 class="card-title">BMW 6-Series </h5>
+                        <div class="overlay">
+                            <div class="text">
+                                <h1 class="h1text">Book your car now</h1>
+                                <img src="asserts/img/car2.jpg " alt="Avatar" class="image" >
+                                <h6 class="h6"> $20 DAY</h6>
+                                <button class="Bbutton">Booking</button>
+                            </div>
+                        </div>
+                        <h6 class="card-subtitle mb-2 text-muted">
+                            <p>Type-mini</p>
+                            <p>No of passengers-4</p>
+                            <p>Transmission-Auto</p>
+                            <p>Fuel-Petrol</p>
+                            <p>Free Km for a Day-200</p>
+                            <p>Free Km for a Month-3000</p>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-secondary mb-3" id="nav">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item active" id="dt">
+            <a class="nav-link" href="#" >
+                <img src="ass/icon/Home.png" width="18" >
+            </a>
+
+            <span class="sr-only"></span>
+        </li>
+    </ul>
+
+
+
+
+    <a class="navbar-brand" href="#">Car Rental  System</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse"  id="navbarColor03">
+        <ul class="navbar-nav mr-auto">
+
+
+
+            <li class="nav-item" id="cu">
+                <a class="nav-link" href="#">
+                    <img src="ass/icon/cust.png" width="18" >
+                    ViewCustomer</a>
+
+            </li>
+
+            <li class="nav-item" id="ac"  >
+                <a class="nav-link" href="#" >
+                    <img src="ass/icon/addcar.png" width="18" >
+                    ManageCars
+
+                </a>
+
+            </li>
+            <li class="nav-item" id="lo"  >
+                <a class="nav-link" href="#" >
+                    <img src="ass/icon/she.png" width="18" >
+                    View Rental Request
+
+                </a>
+
+            </li>
+
+            <li class="nav-item" id="it">
+                <a class="nav-link" href="#"  >
+                    <img src="ass/icon/sh.png" width="18" >
+                    Driver Shedule</a>
+
+            </li>
+
+
+            <li class="nav-item" id="ot">
+                <a class="nav-link" href="#">
+                    <img src="ass/icon/book.png" width="18" >
+                    Booking</a>
+
+            </li>
+
+            <li class="nav-item" id="dr"  >
+                <a class="nav-link" href="#" >
+                    <img src="ass/icon/driv.png" width="18" >
+                    AddDriver
+                </a>
+
+            </li>
+
+        </ul>
+
+    </div>
+</nav>
+
+<div class="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-12 " id="dash"  >
+
+
+
+    <div class="row" >
+
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-6 mt-6">
+
+            <div class="flex-wrapper">
+                <div class="single-chart">
+                    <svg viewBox="0 0 36 36" class="circular-chart red">
+                        <path class="circle-bg"
+                              d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+                        />
+                        <path class="circle"
+                              stroke-dasharray="90, 100"
+                              d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+                        />
+                        <text x="18" y="20.35" class="percentage">90%</text>
+                    </svg>
+                </div>
+
+
+                <div class="single-chart">
+                    <svg viewBox="0 0 36 36" class="circular-chart green">
+                        <path class="circle-bg"
+                              d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+                        />
+                        <path class="circle"
+                              stroke-dasharray="60, 100"
+                              d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+                        />
+                        <text x="18" y="20.35" class="percentage">60%</text>
+                    </svg>
+                </div>
+
+                <div class="single-chart">
+                    <svg viewBox="0 0 36 36" class="circular-chart blue">
+                        <path class="circle-bg"
+                              d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+                        />
+                        <path class="circle"
+                              stroke-dasharray="40, 100"
+                              d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+                        />
+                        <text x="18" y="20.35" class="percentage">40%</text>
+                    </svg>
+                </div>
+                <div class="single-chart">
+                    <svg viewBox="0 0 36 36" class="circular-chart orange">
+                        <path class="circle-bg"
+                              d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+                        />
+                        <path class="circle"
+                              stroke-dasharray="30, 100"
+                              d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+                        />
+                        <text x="18" y="20.35" class="percentage">30%</text>
+                    </svg>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-6 mt-6">
+            <div class="flex-wrapper" id="bg">
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-4">
+                    <div class="card text-white bg-danger  mb-4" >
+                        <div class="row">
+                            <div class="col-sm-2 m-lg-3 mt-4">
+                                <i class="fas fa-user-friends fa-2x">
+                                    <img src="asserts/img/custo.jpg " width="30px">
+                                </i>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="font-size: 15px">Customer</h5>
+                                    <p class="card-text">000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-4">
+                 <div class="card text-white bg-success  mb-4" >
+                     <div class="row">
+                         <div class="col-sm-2 m-lg-3 mt-4">
+                             <i class="fas fa-user-friends fa-2x">
+                                 <img src="asserts/img/cars.png " width="30px">
+                             </i>
+                         </div>
+                         <div class="col-sm-8">
+                             <div class="card-body">
+                                 <h5 class="card-title" style="font-size: 15px"> Rent Car</h5>
+                                 <p class="card-text">000</p>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-4">
+            <div class="card text-white bg-primary mb-4" >
+                <div class="row">
+                    <div class="col-sm-2 m-lg-3 mt-4">
+                        <i class="fas fa-user-friends fa-2x">
+                            <img src="asserts/img/Detail.png " width="30px">
+                        </i>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-size: 15px">Request</h5>
+                            <p class="card-text">0000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" >
+            <div class="card" >
+               <div class=" card-body" align="center"id="N0R">
+
+                    <h5 class="card-subtitle mb-2 text-muted"  >USERS STATISTICS THIS MONTH</h5>
+                    <img src="asserts/img/chart.jpeg" width="40%" height="40%">
+                   <div class="progress-card">
+                       <div class="d-flex justify-content-between mb-1">
+                           <span class="text-muted">Customers</span>
+                           <span class="text-muted fw-bold"> 0000</span>
+                       </div>
+                       <div class="progress mb-2" style="height: 7px;">
+                           <div class="progress-bar bg-success" role="progressbar" style="width:
+                                        00%" aria-valuenow="00" aria-valuemin="0" aria-valuemax="100" data-toggle="tooltip" data-placement="top" title="00%"></div>
+                       </div>
+                   </div>
+                   <div class="progress-card">
+                       <div class="d-flex justify-content-between mb-1">
+                           <span class="text-muted">Request</span>
+                           <span class="text-muted fw-bold"> 0000</span>
+                       </div>
+                       <div class="progress mb-2" style="height: 7px;">
+                           <div class="progress-bar bg-success" role="progressbar" style="width:
+                                        00%" aria-valuenow="00" aria-valuemin="0" aria-valuemax="100" data-toggle="tooltip" data-placement="top" title="00%"></div>
+                       </div>
+                   </div>
+                   <div class="progress-card">
+                       <div class="d-flex justify-content-between mb-1">
+                           <span class="text-muted">Rent Car</span>
+                           <span class="text-muted fw-bold"> 0000</span>
+                       </div>
+                       <div class="progress mb-2" style="height: 7px;">
+                           <div class="progress-bar bg-success" role="progressbar" style="width:
+                                        00%" aria-valuenow="00" aria-valuemin="0" aria-valuemax="100" data-toggle="tooltip" data-placement="top" title="00%"></div>
+                       </div>
+                   </div>
+                   <div class="progress-card">
+                       <div class="d-flex justify-content-between mb-1">
+                           <span class="text-muted">Profit</span>
+                           <span class="text-muted fw-bold"> 0000$</span>
+                       </div>
+                       <div class="progress mb-2" style="height: 7px;">
+                           <div class="progress-bar bg-success" role="progressbar" style="width:
+                                        00%" aria-valuenow="00" aria-valuemin="0" aria-valuemax="100" data-toggle="tooltip" data-placement="top" title="00%"></div>
+                       </div>
+                   </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="card" >
+                <div class=" card-body" align="center" id="NOS">
+                    <h6 class="card-title"  > 2021 Rent</h6>
+                    <h6 class="card-subtitle mb-2 text-muted" >NUMBER OF RENTS</h6>
+                    <img src="asserts/img/carpiech.jpg" width="50%">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<main class="container-fluid" id="loginContent" >
+    <section class="row ">
+        <div class="col-12 mt-6">
+            <button type="button"  class="btn btn-success">View Request</button>
+            <div class="modal-content mt-lg-6">
+
+                <table class="table table-bordered table-hover">
+                    <thead class="bg-dark text-white">
+                    <tr>
+                        <th>Request Number</th>
+                        <th>Nic Number</th>
+                        <th>Car Brand</th>
+                        <th>Rate</th>
+                        <th>Rent in data</th>
+                        <th>Rent out data</th>
+                    </tr>
+                    </thead>
+                    <tbody id="tblRequest">
+
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+        <div class="col-5 col-lg-12 col-md-11  ">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color: black">
+                        <h5 class="modal-title"  >
+                            <i class="fas fa-gopuram"></i>
+                            <h5 style="color: #ffc107"> Accept Request</h5>
+                            <img src="asserts/img/Detail.png">
+                        </h5>
+                    </div>
+                    <div class="modal-body" style="background-color: #ced4da" >
+
+                        <form >
+                            <div class="form-group">
+                                <label class="form-label" >Request id</label>
+                                <input class="form-control"  name="cid" type="text" >
+                            </div>
+                            <div class="form-group">
+                                <label for="txtcarbrand">Customer Nic</label>
+                                <input class="form-control"  required type="text" >
+                                <span class="control-error" ></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="txtcartype ">Car Brand</label>
+                                <input class="form-control" required type="text" >
+                                <span class="control-error" ></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="txtpassengers">Rate Type</label>
+                                <input class="form-control"  required type="text" >
+                            </div>
+                            <div class="form-group">
+                                <label for="txttransmission">Rent Start Date</label>
+                                <input class="form-control"  required type="text" >
+                            </div>
+                            <div class="form-group">
+                                <label for="txtfuel">Rent End Date</label>
+                                <input class="form-control"  required type="text">
+                            </div>
+
+
+                        </form>
+                    </div>
+                    <div class="modal-footer" style="background-color: #191c1f">
+
+                        <button type="button" class="btn btn-primary" id="accsept" >
+                            Accsept
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+</main>
+<main class="container-fluid" id="singContent">
+    <section class="row" >
+
+   <!--  <div class="col-8">
+            <h1 style="color: #055160">Singin
+
+            </h1>
+
+        </div>
+        <div class="col-4" >
+
+
+            <div class="form-group">
+                <label class="form-label" for="txtCustomerid">Customer ID</label>
+                <input class="form-control" id="txtCuerid" name="id" type="text" >
+            </div>
+            <div class="form-group">
+                <label for="txtCustomername">Customername</label>
+                <input class="form-control" id="txtCmername"  type="text" name="name">
+                <span class="control-error" id="lblCustomername"></span>
+            </div>
+            <div class="form-group">
+                <label for="txtEmail">Email </label>
+                <input class="form-control" id="txtil"  type="text" name="email">
+                <span class="control-error" id="lblEmail"></span>
+            </div>
+            <div class="form-group">
+                <label for="txtNicnumber">Nic Number</label>
+                <input class="form-control" id="txtNicber" type="text" name="nicnumber">
+                <span class="control-error" id="lblNicnumber"></span>
+            </div>
+            <div class="form-group">
+                <label for="txtDrivinglicennumber">Driving licen number</label>
+                <input class="form-control" id="txtlicennumber" type="text" name="drivinglicensenumber">
+                <span class="control-error" id="lblDrivinglicennumber"></span>
+            </div>
+            <div class="form-group">
+                <label for="txtAddress">Address</label>
+                <input class="form-control" id="txress" type="text" name="address">
+                <span class="control-error" id="lblAddress"></span>
+            </div>
+            <div class="form-group">
+                <label for="txtContact">Contact</label>
+                <input class="form-control" id="txttact" type="text" name="contactnumber">
+                <span class="control-error" id="lblContact"></span>
+            </div>
+
+            <div class="col-md-12">
+
+                <img src="asserts/img/lition.png">
+                <form>
+                    <label class="form-label" for="file">Select a file</label>
+                    <input class="form-control" id="le" name="file" type="file">
+                    <button class="btn btn-danger mt-3" id="btnSendFile" type="button">Upload</button>
+                </form>
+            </div>
+        </div>
+
+       <div class="modal-footer">
+
+
+        </div>-->
+
+
+      <!--<div class="col-5 col-lg-12 col-md-11   " >
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header" style="background-color:black">
+                            <h5 class="modal-title"  >
+                                <i class="fas fa-gopuram"></i>
+                                <h1 style="color: #ffc107"> Singin
+
+                                </h1>
+                                <img src="asserts/img/si.png" width="100">
+                            </h5>
+                        </div>
+                        <div class="modal-body" style="background-color: #ced4da">
+
+                            <form >
+                                &lt;!&ndash;<div class="col-8">
+                                    <h1 style="color: #055160">Singin
+
+                                    </h1>
+
+                                </div>
+                                <div class="col-8" >
+
+
+                                    <div class="form-group">
+                                        <label class="form-label" for="txtCustomerid">Customer ID</label>
+                                        <input class="form-control" id="txtCustomerid" name="id" type="text" >
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txtCustomername">Customername</label>
+                                        <input class="form-control" id="txtCustomername"  type="text" name="name">
+                                        <span class="control-error" id="lblCustomername"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txtEmail">Email </label>
+                                        <input class="form-control" id="txtEmail"  type="text" name="email">
+                                        <span class="control-error" id="lblEmail"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txtNicnumber">Nic Number</label>
+                                        <input class="form-control" id="txtNicnumber" type="text" name="nicnumber">
+                                        <span class="control-error" id="lblNicnumber"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txtDrivinglicennumber">Driving licen number</label>
+                                        <input class="form-control" id="txtDrivinglicennumber" type="text" name="drivinglicensenumber">
+                                        <span class="control-error" id="lblDrivinglicennumber"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txtAddress">Address</label>
+                                        <input class="form-control" id="txtAddress" type="text" name="address">
+                                        <span class="control-error" id="lblAddress"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txtContact">Contact</label>
+                                        <input class="form-control" id="txtContact" type="text" name="contactnumber">
+                                        <span class="control-error" id="lblContact"></span>
+                                    </div>
+
+                                    <div class="col-md-12">
+
+                                        <img src="asserts/img/lition.png">
+                                        <form>
+                                            <label class="form-label" for="file">Select a file</label>
+                                            <input class="form-control" id="file" name="file" type="file">
+                                            <button class="btn btn-danger mt-3" id="btnSendFile" type="button">Upload</button>
+                                        </form>
+                                    </div>
+                                </div>
+
+
+                            </form>
+                        </div>
+                        <div class="modal-footer" style="background-color: black">
+
+                            <button type="button" class="btn btn-primary" id="btnSaveCustomer">
+                                Singin
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+
+
+
+    </section>
+</main>
+<main class="container-fluid" id="driverContent" >
+    <section class="row">
+        <div class="col-4">
+            <div class="modal-header" style="background-color: black">
+                <h5 class="modal-title"  >
+                    <i class="fas fa-gopuram"></i>
+                    <h2 style="color: #ffc107" >Enter Driver Details
+                        <img src="asserts/img/Detail.png" width="55">
+                    </h2>
+                </h5>
+            </div>
+
+<div class="modal-body"style="background-color: #ced4da" >
+    <div class="form-group">
+        <label class="form-label" for="Did">Driver ID</label>
+        <input class="form-control" id="Did" name="did" type="text" >
+    </div>
+    <div class="form-group">
+        <label for="txtDriverName">Driver Name</label>
+        <input class="form-control" id="txtDriverName" required type="text" name="dname">
+        <span class="control-error" id="lblDriverName"></span>
+    </div>
+    <div class="form-group">
+        <label >Gender</label>
+        <br>
+        <input type="radio" id="txtMGender" name="gender" value="male" >
+        <label for="txtMGender">Male</label><br>
+        <input type="radio" id="txtFGender" name="gender" value="female">
+        <label for="txtFGender">Female</label><br>
+        <span class="control-error" id="lblGender"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="txtDContact">Contact</label>
+        <input class="form-control" id="txtDContact" type="text" name="dcontact">
+        <span class="control-error" id="lbldContact"></span>
+    </div>
+    <div class="form-group">
+        <label for="txtDAddress">Address</label>
+        <input class="form-control" id="txtDAddress" type="text" name="daddress">
+        <span class="control-error" id="lblDAddress"></span>
+    </div>
+    <div class="form-group">
+        <label for="txtlicenseno">License No</label>
+        <input class="form-control" id="txtlicenseno" type="text" name="drivinglicensenumber">
+        <span class="control-error" id="lbllicenseno"></span>
+    </div>
+
+</div>
+            <div class="modal-footer" style="background-color: black">
+                <button type="button" class="btn btn-primary" id="btnDriver">
+                    Save
+                </button>
+                <button type="button" class="btn btn-success" id="btnloaddriver">
+                    LoadAllDriver
+                </button>
+                <button type="button" class="btn btn-danger" id="btnDriverDelete" >
+                    Remove
+                </button>
+                <button type="button" class="btn btn-warning" id="btnDriverUpdate" >
+                    Update
+                </button>
+            </div>
+
+        </div>
+        <div class="col-8">
+            <table class="table table-bordered table-hover">
+                <thead class="bg-dark text-white">
+                <tr>
+                    <th>Driver ID</th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Contact</th>
+                    <th>Address</th>
+                    <th>License No</th>
+                </tr>
+                </thead>
+                <tbody id="tblDriver">
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+</main>
+<main class="container-fluid" id="addCarContent">
+    <section class="row ">
+        <div class="col-5 col-lg-12 col-md-11  ">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color: black">
+                        <h5 class="modal-title"  >
+                            <i class="fas fa-gopuram"></i>
+                            <h5 style="color: #ffc107"> Please Provide Your Car Details</h5>
+                            <img src="asserts/img/cars.png">
+                        </h5>
+                    </div>
+                    <div class="modal-body" style="background-color: #ced4da" >
+
+                        <form >
+                            <div class="form-group">
+                                <label class="form-label" for="cid">Car ID</label>
+                                <input class="form-control" id="cid" name="cid" type="text" >
+                            </div>
+                            <div class="form-group">
+                                <label for="txtcarbrand">Car Brand</label>
+                                <input class="form-control" id="txtcarbrand" required type="text" name="carbrand">
+                                <span class="control-error" id="lblcarbrand"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="txtcartype ">Car Type</label>
+                                <input class="form-control" id="txtcartype " required type="text" name="cartype">
+                                <span class="control-error" id="lblcartype"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="txtpassengers">Passengers</label>
+                                <input class="form-control" id="txtpassengers" required type="text" name="passengers">
+                            </div>
+                            <div class="form-group">
+                                <label for="txttransmission">transmission</label>
+                                <input class="form-control" id="txttransmission" required type="text" name="transmission">
+                            </div>
+                            <div class="form-group">
+                                <label for="txtfuel">Fuel</label>
+                                <input class="form-control" id="txtfuel" required type="text" name="fuel">
+                            </div>
+                            <div class="form-group">
+                                <label for="txtdaliyrate">Daliy Rate</label>
+                                <input class="form-control" id="txtdaliyrate" required type="text" name="daliyrate">
+                            </div>
+                            <div class="form-group">
+                                <label for="txtmonthlyrate">Monthly Rate</label>
+                                <input class="form-control" id="txtmonthlyrate" required type="text" name="monthlyrate">
+                            </div>
+                            <div class="form-group">
+                                <label for="txtfreekmforday">Free km For Day</label>
+                                <input class="form-control" id="txtfreekmforday" required type="text" name="freekmforday">
+                            </div>
+                            <div class="form-group">
+                                <label for="txtfreekmformonth">Free km For Month</label>
+                                <input class="form-control" id="txtfreekmformonth" required type="text" name="Freekmformonth ">
+                            </div>
+                            <div class="form-group">
+                                <label for="txtpriceperextrakm">Pricr Per Extra Km</label>
+                                <input class="form-control" id="txtpriceperextrakm" required type="text" name="priceperextrakm ">
+                            </div>
+                            <div class="form-group">
+                                <label for="txtregistationnum">Registration number</label>
+                                <input class="form-control" id="txtregistationnum" required type="text" name="registrationnum">
+                            </div>
+                            <div class="form-group">
+                                <label for="txtcolor">Color</label>
+                                <input class="form-control" id="txtcolor" required type="text" name="color">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer" style="background-color: #191c1f">
+
+                        <button type="button" class="btn btn-primary" id="btnaddcar" >
+                            Add
+                        </button>
+                        <button type="button" class="btn btn-success" id="btnloadcar" >
+                            LoadCar
+                        </button>
+                        <button type="button" class="btn btn-danger" id="btnCarDelete" >
+                            Remove
+                        </button>
+                        <button type="button" class="btn btn-warning" id="btnCarUpdate" >
+                            Update
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-md-12 mt-4">
+            <table class="table table-bordered table-hover">
+                <thead class="bg-dark text-white">
+                <tr>
+                    <th>Car ID</th>
+                    <th>Car Brand</th>
+                    <th>Car Type </th>
+                    <th>Passengers </th>
+                    <th>transmission </th>
+                    <th>Fuel</th>
+                    <th>Daliy Rate(%) </th>
+                    <th>Monthly Rate(%)</th>
+                    <th> Free km For Day(Rs.)</th>
+                    <th>Free km For Month(Rs.)</th>
+                    <th>Pricr Per Extra Km (Rs.)</th>
+                    <th>Registration number </th>
+                    <th>Color</th>
+                </tr>
+                </thead>
+                <tbody id="tblAddCar">
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+</main>
+<main class="container-fluid" id="itemContent">
+    <section class="row">
+        <!--<div class="col-4">
+            <h1>Journy Details
+            <img src="asserts/img/CarRental.png">
+            </h1>
+
+            <div class="form-group">
+                <label for="txtCar">Car</label>
+                <input class="form-control" id="txtCar" type="text">
+                <span class="control-error" id="lbljdCarname"></span>
+            </div>
+            <div class="form-group">
+                <label for="txtVnumber ">Vehical Number</label>
+                <input class="form-control" id="txtVnumber " type="text">
+                <span class="control-error" id="lblname"></span>
+            </div>
+            <div class="form-group">
+                <label for="itemQty">Rent Date</label>
+                <input class="form-control" id="itemQty" type="text">
+                <span class="control-error" id="lblqty"></span>
+            </div>
+            <div class="form-group">
+                <label for="itemPrice">End Date</label>
+                <input class="form-control" id="itemPrice" type="text">
+                <span class="control-error" id="lblprice"></span>
+            </div>
+            <div class="form-group">
+                <label for="itemPrice">Fare</label>
+                <input class="form-control" id="Fare" type="text">
+                <span class="control-error" id="lblFare"></span>
+            </div>
+            <div class="form-group">
+                <label for="txtDriverName">Driver Name</label>
+                <input class="form-control" id="txtjdDriverName" type="text">
+                <span class="control-error" id="lbljdDriverName "></span>
+            </div>
+            <div class="form-group">
+                <label for="txtContact">Driver Contact</label>
+                <input class="form-control" id="txtjdContact" type="text">
+                <span class="control-error" id="lbljdContact "></span>
+            </div>
+            <div class="form-group">
+                <label for="txtNOD">Number Of Day(s)</label>
+                <input class="form-control" id="txtNOD" type="text">
+                <span class="control-error" id="lblNOD "></span>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="btnItem">
+                    Save
+                </button>
+
+            </div>
+        </div>
+      <div class="col-6">
+
+      </div>-->
+        <div class="col-md-12 mt-4" style="height:180px; ">
+            <h1 style="color:#ffc107"> Driver Shedule
+                <img src="asserts/img/Booking.png">
+            </h1>
+
+            <table class="table table-bordered text-white">
+                <thead class="bg-dark">
+                <tr>
+                    <th>Driver name</th>
+                    <th>Date</th>
+                    <th>time</th>
+
+                </tr>
+                </thead>
+                <tbody class="bg-light text-dark" >
+                <tr>
+                   <td>NIMAL KARUNARATHNA</td>
+                <td>MON DAY-SAT DAY</td>
+                   <td>7.00A.M-1.00P.M</td>
+                </tr>
+
+                   <td>SUNIMAL PERERA</td>
+                   <td>MON DAY-SUN DAY</td>
+                   <td>7.00A.M-3.00P.M</td>
+
+                   <tr>
+                       <td>KAMAL SAUMYA</td>
+                       <td>WED DAY-SUN DAY</td>
+                       <td>6.00A.M-2.00P.M</td>
+                   </tr>
+                   <tr>
+                       <td>SEHAN PERERA</td>
+                       <td>MON DAY-SAT DAY</td>
+                       <td>1.00A.M-9.00P.M</td>
+                   </tr>
+                   <tr>
+                       <td>KAVIDU RATHNAYKA</td>
+                       <td>WED DAY-SUN DAY</td>
+                       <td>2.00A.M-10.00P.M</td>
+                   </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+</main>
+<main class="container-fluid" id="orderContent" >
+   <!-- <div class="container-fluid mt-4">
+
+        <div class="jumbotron pt-6">
+            <div class="row">
+                <div class="col-5 col-lg-12 col-md-11">
+                    <div class="card">
+                        <div class="card-header bg-success font-weight-bolder"> Details</div>
+                        <div class="card-body">
+                            <form id="selectCustomers">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label>Select Car :</label>
+                                            <input class="form-control" id="txtCarname " type="text">
+                                            <span class="control-error"
+                                                  id="orderId-invalid-error"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label>Start Date :</label>
+                                            <input class="form-control" id="txtStartDate" type="date">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label>End Date :</label>
+                                            <input class="form-control" id="txtEndDate" type="date">
+                                            <span class="control-error"
+                                                  id="cus-empty-error"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <div class="col-12">
+                                                <label>Number Plate : </label>
+
+                                            <input class="form-control" id="txtcarnumberplate" >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label>Choose Your Car type :</label>
+                                            <br>
+                                            <input type="radio" id="txtAC" name="gender" value="male">
+                                            <label for="txtMGender">WithAC</label><br>
+                                            <input type="radio" id="txtNonAC" name="gender" value="female">
+                                            <label for="txtFGender">With-Out-AC</label><br>
+                                            <span class="control-error" id="lbAC"></span>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label>Charge type :</label>
+                                            <input type="radio" id="txtperKM" name="gender" value="male">
+                                            <label for="txtMGender">perKM</label><br>
+                                            <input type="radio" id="txtperday" name="gender" value="female">
+                                            <label for="txtFGender">per day</label><br>
+                                            <span class="control-error" id="lblper"></span>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label>driver</label>
+                                            <input class="form-control" id="txtDriver" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" id="btnSaveDetail">
+                                            Save
+                                        </button>
+
+                                    </div>
+                                </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+              &lt;!&ndash; <div class="col-lg-5 mt-lg-0 mt-3">
+                    <div class="card">
+                        <div class="card-header bg-secondary  font-weight-bolder">Item Select</div>
+                        <div class="card-body">
+                            <form>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label>Item :</label>
+                                            <select class="form-control" id="selectItemCode"></select>
+                                            <span class="control-error"
+                                                  id="item-empty-error"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label>Item Code :</label>
+                                            <input class="form-control" id="txtItemCode" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="form-group">
+                                            <label>Item Name :</label>
+                                            <input class="form-control" id="txtItemDescription" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="form-group">
+                                            <label class="">Price :</label>
+                                            <input class="form-control" id="txtItemPrice" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="form-group">
+                                            <label class="">QtyOnH :</label>
+                                            <input class="form-control" id="txtQTYOnHand" type="text">
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <hr>
+                                    <div class="col-12 mt-lg-3">
+                                        <div class="form-group">
+                                            <label>Order Quantity :</label>
+                                            <input class="form-control" id="txtQty" min="1" type="number">
+                                            <span class="control-error" id="order-qty-empty-error"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group text-right">
+                                    <button class="btn btn-danger col-12 col-sm-auto mt-lg-3" id="btnAddToTable" type="button">
+                                        Add Item
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>&ndash;&gt;
+
+            </div>
+            &lt;!&ndash;order table&ndash;&gt;
+            <div class="col-md-12 mt-4" style="height:180px; overflow-y: scroll">
+                <h1 style="color:darkmagenta"> YOUR BOOKING</h1>
+                <h1 style="color:navy"> Hope you enjoyed our service</h1>
+                <table class="table table-bordered text-white">
+                    <thead class="bg-secondary">
+                    <tr>
+                        <th>car</th>
+                        <th>Customer Name</th>
+                        <th>Rent Start Date</th>
+                        <th>Rent End Date</th>
+                        <th>Distance</th>
+                        <th>Total</th>
+                    </tr>
+                    </thead>
+                    <tbody class="bg-light text-dark" id="orderTable">
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>-->
+    <div class="container-fluid mt-4">
+        <h1 style="color: #ffc107"> YOUR BOOKING
+            <img src="asserts/img/Booking.png">
+        </h1>
+        <h1 style="color: #6a1a21"> Hope you enjoyed our service</h1>
+        <div class="jumbotron pt-4">
+            <div class="row">
+            <!--    <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-header bg-danger font-weight-bolder" > Details</div>
+                        <div class="card-body">
+                            <form id="selectCustomers">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label>Driver ID :</label>
+                                            <input class="form-control" id="txtBDriverID" type="text">
+                                            <span class="control-error"
+                                                  id="orderId-invalid-error"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label>Driver Name:</label>
+                                            <input class="form-control" id="txtDrivnam" type="text">
+                                            <span class="control-error"
+                                                  id="drivernam-invalid-error"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label>Driver Lisionnum :</label>
+                                            <input class="form-control" id="txtDriverLitionnum" type="text">
+                                            <span class="control-error"
+                                                  id="driverlistion-invalid-error"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+
+                                    </div>
+                                    <div class="col-6">
+
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label>Address :</label>
+                                            <input class="form-control" id="orderCustomerAddress" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>-->
+
+                <div class="col-lg-5 mt-lg-0 mt-3" >
+
+                    <div class="card">
+
+                        <div class="card-header bg-secondary  font-weight-bolder" >JOURNEY Details</div>
+                        <div class="card-body" >
+                            <form >
+                                <div class="row" >
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label>Car ID :</label>
+                                            <input class="form-control" id="txtCarID" type="text">
+                                            <span class="control-error"
+                                                  id="carId-invalid-error"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label>Start Date :</label>
+                                            <input class="form-control" id="txtStartDate" type="date">
+                                        </div>
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="form-group">
+                                            <label>End Date :</label>
+                                            <input class="form-control" id="txtEndDate" type="date">
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="form-group">
+                                            <label class="">Free km for Day :</label>
+                                            <input class="form-control" id="txtFKMforDay" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                      <!--  <div class="form-group">
+                                            <label class="">Distance :</label>
+                                            <input class="form-control" id="txtQTYOnHand" type="text">
+                                        </div>-->
+                                    </div>
+                                    <hr>
+                                    <hr>
+                                    <div class="col-12 mt-lg-3">
+                                        <div class="form-group">
+                                            <label>Distance:</label>
+                                            <input class="form-control" id="txtDistance" min="1" type="number">
+                                            <span class="control-error" id="order-qty-empty-error"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group text-right">
+                                    <button class="btn btn-danger col-12 col-sm-auto mt-lg-3" id="btnAddToTable" type="button">
+                                        Add Details
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <section class="content-box-2 p-6 ">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <span class="" id="total-text">Total : </span>
+                                    </div>
+                                    <div class="col-12">
+                                        <span id="total">00.0</span> Rs/=
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <span id="total-text1">SubTotal : </span>
+                                    </div>
+                                    <div class="col-12">
+                                        <span id="subtotal">00.0</span> Rs/=
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-6 mt-2">
+                                <div class="form-group">
+                                    <label>Cash</label>
+                                    <input class="form-control" id="txtCash" min="0" type="number">
+                                    <span class="control-error"
+                                          id="cash-empty-error"></span>
+                                </div>
+                            </div>
+                            <div class="col-6 mt-2">
+                                <div class="form-group">
+                                    <label>LosseDamage Payment</label>
+                                    <input class="form-control" id="txtLooseDamagePayment" min="0" type="number">
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="form-group">
+                                    <label>Balance</label>
+                                    <input class="form-control" id="txtBalance" type="text">
+                                </div>
+                            </div>
+                            <div class="col-4 mt-4">
+                                <button class="btn btn-warning" id="btnSubmitOrder" type="button">Purchase</button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <!--order table-->
+            <div class="col-md-12 mt-4" style="height:180px; overflow-y: scroll">
+                <h1 style="color:darkmagenta"> YOUR BOOKING
+                <img src="asserts/img/Booking.png">
+                </h1>
+                <h1 style="color:navy"> Hope you enjoyed our service</h1>
+                <table class="table table-bordered text-white">
+                    <thead class="bg-dark">
+                    <tr>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                        <th>Free km for Day</th>
+                        <th>Distance</th>
+                        <th>Total</th>
+                    </tr>
+                    </thead>
+                    <tbody class="bg-light text-dark" id="BookingTable">
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</main>
+<main class="container-fluid" id="customerContent">
+    <section class="row" id="formCustomer">
+
+        <div class="col-8">
+
+            <div class="waviy">
+                <span style="--i:1">Z</span>
+                <span style="--i:2">I</span>
+                <span style="--i:3">Y</span>
+                <span style="--i:4">O</span>
+                <span style="--i:5">V</span>
+                <span style="--i:6">U</span>
+                <span style="--i:7">D</span>
+                <span style="--i:8">D</span>
+                <span style="--i:9">I</span>
+                <span style="--i:10">N</span>
+
+            </div>
+            <h1 style="color: #ffc107">View Customer
+                <img src="asserts/img/custo.jpg" width="100px" height="100px">
+            </h1>
+
+            <table class="table table-bordered table-hover">
+                <thead class="bg-dark text-white">
+                <tr>
+
+
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>Nic Number</th>
+                    <th>D.l.number</th>
+                    <th>Address</th>
+                    <th>Contact</th>
+                </tr>
+                </thead>
+                <tbody id="tblCustomer">
+
+                </tbody>
+            </table>
+        </div>
+        <div class="col-4" >
+
+             <div class="modal-body" style="background-color: #ced4da">
+
+
+                 <div class="form-group">
+                     <label for="txtEil">Email </label>
+                     <input class="form-control" id="txtEil"  type="text" name="email">
+                     <span class="control-error" id="lblEil"></span>
+                 </div>
+                 <div class="form-group">
+                     <label for="txtpassword">Password</label>
+                     <input class="form-control" id="txtpassword"  type="text" name="name">
+                     <span class="control-error" id="lblpassword"></span>
+                 </div>
+                 <div class="form-group">
+                     <label for="txtNicnber">Nic Number</label>
+                     <input class="form-control" id="txtNicnber" type="text" name="nicnumber">
+                     <span class="control-error" id="lblNicnber"></span>
+                 </div>
+                 <div class="form-group">
+                     <label for="txtDrivingcennumber">Driving licen number</label>
+                     <input class="form-control" id="txtDrivingcennumber" type="text" name="drivinglicensenumber">
+                     <span class="control-error" id="lblDrivingcennumber"></span>
+                 </div>
+                 <div class="form-group">
+                     <label for="txtAress">Address</label>
+                     <input class="form-control" id="txtAress" type="text" name="address">
+                     <span class="control-error" id="lblAress"></span>
+                 </div>
+                 <div class="form-group">
+                     <label for="txtCtact">Contact</label>
+                     <input class="form-control" id="txtCtact" type="text" name="contactnumber">
+                     <span class="control-error" id="lblCtact"></span>
+                 </div>
+
+
+
+
+             </div>
+
+
+
+            <div class="modal-footer" style="background-color: #191c1f">
+             <!--<button type="button" class="btn btn-primary" id="btnSavustomer">
+                    Save
+                </button>-->
+                <button class="btn btn-success" id="btnLoad" type="button">Loadall</button>
+             <!--  <button type="button" class="btn btn-danger" id="btnCusDelete" >
+                    Remove
+                </button>-->
+                <button type="button" class="btn btn-warning" id="btnCusUpdate" >
+                    Update
+                </button>
+            </div>
+           <!-- <div class="col-md-12">
+                <h2 style="color: indigo">Upload  a Driving licens & identy Card</h2>
+                <img src="asserts/img/lition.png">
+                <form>
+                    <label class="form-label" for="file">Select a file</label>
+                    <input class="form-control" id="file" name="file" type="file">
+                    <button class="btn btn-danger mt-3" id="btnSendFile" type="button">Upload</button>
+                </form>
+            </div>-->
+        </div>
+
+    </section>
+</main>
+
+
+<script src="asserts/js/jquery-3.6.0.min.js"></script>
+
+
+<script>
+    /*$("#btnSaveCustomer").click(function () {
+        let  CustomerID=$("#txtCustomerid").val();
+        let Customername=$("#txtCustomername").val();
+        let  Emai=$("#txtEmail").val();
+        let NicNumber=$("#txtNicnumber").val();
+        let Drivinglicennumber=$("#txtDrivinglicennumber").val();
+        let Address=$("#txtAddress").val();
+        let Contact=$("#txtContact").val();
+
+        $.ajax({
+            method:"POST",
+            url:"http://localhost:8082/CRS/api/v1/customer",
+            contentType:"application/json",
+            async:true,
+            data:JSON.stringify({
+                id:CustomerID,
+                name:Customername,
+                email:Emai,
+                nicnumber:NicNumber,
+                drivinglicensnumber:Drivinglicennumber,
+                address:Address,
+                contactnumber:Contact
+            }),
+            success:function (data) {
+                console.log(data);
+
+                loadAllCustomers();
+            }
+        });
+
+    });*/
+
+   $("#btnLoad").click(function () {
+       loadAllRegistrations();
+    });
+    loadAllRegistrations();
+    function   loadAllRegistrations() {
+        $("#tblCustomer").empty();
+        $.ajax({
+            url:" http://localhost:8082/CRS/api/v1/registration",
+            method: "GET",
+            async: true,
+            dataType: "json", // convert response into JSON if valid
+          /*  success: function (data, textState, xhr) {
+                // let ob = JSON.parse(data); // do the same thing
+                for (let reg of data) {
+                    var row = `<tr><td>${reg.email}</td><td>${reg.password}</td><td>${reg.nic}</td><td>${reg.redrivinglicensenumber}</td><td>${reg.readdress}</td><td>${reg.recontactnumber}</td></tr>`;
+                    $("#tblCustomer").append(row);
+                }
+            }*/
+            success: function (data, textState, xhr) {
+                // let ob = JSON.parse(data); // do the same thing
+                for (let reg of data.data) {
+                    var row = `<tr><td>${reg.email}</td><td>${reg.password}</td><td>${reg.nic}</td><td>${reg.redrivinglicensenumber}</td><td>${reg.readdress}</td><td>${reg.recontactnumber}</td></tr>`;
+                    $("#tblCustomer").append(row);
+
+                }
+            }
+        });
+    }
+   /* $("#btnSendFile").click(function () {
+
+        var fileObject = $("#file")[0].files[0];//access file object from input field
+        var fileName = $("#file")[0].files[0].name; //get file name
+
+        var data = new FormData(); //setup form data object to send file data
+        data.append("file", fileObject, fileName); //append data
+
+        $.ajax({
+            url: 'up',
+            method: 'post',
+            async: true,
+            processData: false, //stop processing data of request body
+            contentType: false, // stop setting content type by jQuery
+            data: data,
+            success: function () {
+                alert("File Uploaded");
+            }
+        });
+    });*/
+    $("#btnaddcar").click(function () {
+        let  CarID=$("#cid").val();
+        let CarBrand=$("#txtcarbrand").val();
+        let  CarType=$("#txtcartype ").val();
+        let Passengers=$("#txtpassengers").val();
+        let transmission=$("#txttransmission").val();
+        let Fuel=$("#txtfuel").val();
+        let DaliyRate =$("#txtdaliyrate").val();
+        let MonthlyRate=$("#txtmonthlyrate").val();
+        let FreekmForDay=$("#txtfreekmforday").val();
+        let FreekmForMonth =$("#txtfreekmformonth").val();
+        let PricePerExtraKm=$("#txtpriceperextrakm").val();
+        let Registrationnumber=$("#txtregistationnum").val();
+        let  Color=$("#txtcolor").val();
+
+        $.ajax({
+            method:"POST",
+            url:"http://localhost:8082/CRS/api/v1/car",
+            contentType:"application/json",
+            async:true,
+            data:JSON.stringify({
+               cid:CarID,
+                 carbrand: CarBrand,
+                 cartype:CarType,
+                 passengers:Passengers,
+                 transmission:transmission,
+                 fuel:Fuel,
+                 daliyrate:DaliyRate,
+                 monthlyrate:MonthlyRate,
+               freekmforday:FreekmForDay,
+                 Freekmformonth:FreekmForMonth,
+                priceperextrakm:PricePerExtraKm ,
+                registrationnum:Registrationnumber,
+                 color:Color
+            }),
+            success:function (data) {
+                console.log(data);
+
+                loadAllCars();
+            }
+        });
+
+    });
+    $("#btnloadcar").click(function () {
+        loadAllCars();
+    });
+    loadAllCars();
+    function loadAllCars() {
+        $("#tblAddCar").empty();
+        $.ajax({
+            url:" http://localhost:8082/CRS/api/v1/car",
+            method: "GET",
+            async: true,
+            dataType: "json", // convert response into JSON if valid
+            success: function (data, textState, xhr) {
+                // let ob = JSON.parse(data); // do the same thing
+                for (let car of data) {
+                    var row = `<tr><td>${car.cid}</td><td>${car.carbrand}</td><td>${car.cartype}</td><td>${car.passengers}</td><td>${car.transmission}</td><td>${car.fuel}</td><td>${car.daliyrate}</td>
+<td>${car.monthlyrate}</td><td>${car.freekmforday}<td>${car.Freekmformonth}</td><td>${car.priceperextrakm}</td><td>${car.registrationnum}</td><td>${car.color}</td>
+</tr>`;
+                    $("#tblAddCar").append(row);
+                }
+            }
+        });
+    }
+
+    $("#btnDriver").click(function () {
+        let DriverID =$("#Did").val();
+        let DriverName=$("#txtDriverName").val();
+        let Gender =$("#txtMGender").val();
+        let Contact=$("#txtDContact").val();
+        let Address=$("#txtDAddress").val();
+        let LicenseNo=$("#txtlicenseno").val();
+
+        $.ajax({
+            method:"POST",
+            url:"http://localhost:8082/CRS/api/v1/driver",
+            contentType:"application/json",
+            async:true,
+            data:JSON.stringify({
+                 did:DriverID,
+                 dname:DriverName,
+                gender:Gender,
+                dcontact:Contact,
+               daddress:Address,
+            drivinglicensenumber:LicenseNo
+            }),
+            success:function (data) {
+                console.log(data);
+
+                loadAlldrivers();
+            }
+        });
+
+    });
+    $("#btnloaddriver").click(function () {
+        loadAlldrivers();
+    });
+    function loadAlldrivers(){
+        $("#tblDriver").empty();
+        $.ajax({
+            url:" http://localhost:8082/CRS/api/v1/driver",
+            method: "GET",
+            async: true,
+            dataType: "json", // convert response into JSON if valid
+            success: function (data, textState, xhr) {
+                // let ob = JSON.parse(data); // do the same thing
+                for (let dr of data) {
+                    var row = `<tr><td>${dr.did}</td><td>${dr.dname}</td><td>${dr.gender}</td><td>${dr.dcontact}</td><td>${dr.daddress}</td><td>${dr. drivinglicensenumber}</td></tr>`;
+                    $("#tblDriver ").append(row);
+                }
+            }
+        });
+    }
+
+    $("#btnAddToTable").click(function () {
+        let CarID =$("#txtCarID").val();
+        let StartDate=$("#txtStartDate").val();
+        let EndDate =$("#txtEndDate").val();
+        let FreekmforDay =$("#txtFKMforDay").val();
+        let Distance=$("#txtDistance").val();
+        let Total=$("#total-text").val();
+
+
+        $.ajax({
+            method:"POST",
+            url:"http://localhost:8082/CRS/api/v1/booking",
+            contentType:"application/json",
+            async:true,
+            data:JSON.stringify({
+               bcarid:CarID,
+                startdate:StartDate,
+                enddate:EndDate,
+                freekmforday:FreekmforDay,
+                distance:Distance,
+                total:Total
+
+            }),
+            success:function (data) {
+                console.log(data);
+
+                loadAllBooking();
+            }
+        });
+
+    });
+    function loadAllBooking(){
+        $("#BookingTable").empty();
+        $.ajax({
+            url:" http://localhost:8082/CRS/api/v1/booking",
+            method: "GET",
+            async: true,
+            dataType: "json", // convert response into JSON if valid
+            success: function (data, textState, xhr) {
+                // let ob = JSON.parse(data); // do the same thing
+                for (let bo of data) {
+                    var row = `<tr><td>${bo.startdate}</td><td>${bo.enddate}</td><td>${bo.freekmforday}</td><td>${bo.distance}</td><td>${bo.total}</td></tr>`;
+                    $("#BookingTable ").append(row);
+                }
+            }
+        });
+    }
+    $('#btnSubmitOrder').click(function () {
+        getTotal();
+    });
+    function getTotal() {
+        let FreekmforDay = parseFloat($('#txtFKMforDay').val());
+        let lossDamagePayment = parseFloat($('#txtLooseDamagePayment').val());
+        let distance = parseFloat($('#txtDistance').val());
+        let tempTot = FreekmforDay * distance;
+
+        if (tempTot >= 2000 && tempTot<5000) {
+            $('#txtLooseDamagePayment').val("10");
+            let tot = tempTot - (FreekmforDay * distance) * (lossDamagePayment / 100);
+            $('#total').val(tot);
+            $('#total').css({
+                'color': 'red',
+                'font-size': '50px'
+            });
+        } else if ((tempTot) >= 5000){
+            $('#txtLooseDamagePayment').val("20");
+            let tot = tempTot - (FreekmforDay * distance) * (lossDamagePayment/ 100);
+            $('#total').val(tot);
+            $('#total').css({
+                'color': 'red',
+                'font-size': '50px'
+            });
+
+
+        }else {
+            $('#txtLooseDamagePayment').val("");
+            $('#total').val("");
+            let tot2 = tempTot;
+            $('#total').val(tot2);
+            $('#total').css({
+                'color': 'red',
+                'font-size': '50px'
+            });
+            $('#txtLooseDamagePayment').css({
+                'color': 'orange',
+
+            });
+        }
+
+
+    }
+
+    $("#btnCusDelete").click(function () {
+        let  CustomerID=$("#txtCustomerid").val();
+
+
+        $.ajax({
+            method:"Delete",
+            url:"http://localhost:8082/CRS/api/v1/customer?id="+CustomerID,
+            contentType:"application/json",
+            async:true,
+
+            success:function (data) {
+                console.log(data);
+
+                loadAllCustomers();
+            }
+        });
+    });
+
+    $("#btnCusUpdate").click(function () {
+        let  CustomerID=$("#txtCustomerid").val();
+        let Customername=$("#txtCustomername").val();
+        let  Emai=$("#txtEmail").val();
+        let NicNumber=$("#txtNicnumber").val();
+        let Drivinglicennumber=$("#txtDrivinglicennumber").val();
+        let Address=$("#txtAddress").val();
+        let Contact=$("#txtContact").val();
+
+        $.ajax({
+            method:"PUT",
+            url:"http://localhost:8082/CRS/api/v1/customer",
+            contentType:"application/json",
+            async:true,
+            data:JSON.stringify({
+                id:CustomerID,
+                name:Customername,
+                email:Emai,
+                nicnumber:NicNumber,
+                drivinglicensnumber:Drivinglicennumber,
+                address:Address,
+                contactnumber:Contact
+            }),
+            success:function (data) {
+                console.log(data);
+
+                loadAllCustomers();
+            }
+        });
+
+    });
+
+    $("#btnDriverDelete ").click(function () {
+        let DriverID =$("#Did").val();
+
+
+        $.ajax({
+            method:"Delete",
+            url:"http://localhost:8082/CRS/api/v1/driver?id="+DriverID,
+            contentType:"application/json",
+            async:true,
+
+            success:function (data) {
+                console.log(data);
+
+                loadAlldrivers();
+            }
+        });
+    });
+    $("#btnDriverUpdate").click(function () {
+        let DriverID =$("#Did").val();
+        let DriverName=$("#txtDriverName").val();
+        let Gender =$("#txtMGender").val();
+        let Contact=$("#txtDContact").val();
+        let Address=$("#txtDAddress").val();
+        let LicenseNo=$("#txtlicenseno").val();
+
+        $.ajax({
+            method:"PUT",
+            url:"http://localhost:8082/CRS/api/v1/driver",
+            contentType:"application/json",
+            async:true,
+            data:JSON.stringify({
+                did:DriverID,
+                dname:DriverName,
+                gender:Gender,
+                dcontact:Contact,
+                daddress:Address,
+                drivinglicensenumber:LicenseNo
+            }),
+            success:function (data) {
+                console.log(data);
+
+                loadAlldrivers();
+            }
+        });
+
+    });
+
+    $("#btnCarDelete ").click(function () {
+        let  CarID=$("#cid").val();
+
+        $.ajax({
+            method:"Delete",
+            url:"http://localhost:8082/CRS/api/v1/car?id="+CarID,
+            contentType:"application/json",
+            async:true,
+
+            success:function (data) {
+                console.log(data);
+
+                loadAllCars();
+            }
+        });
+    });
+    $("#btnCarUpdate").click(function () {
+        let  CarID=$("#cid").val();
+        let CarBrand=$("#txtcarbrand").val();
+        let  CarType=$("#txtcartype ").val();
+        let Passengers=$("#txtpassengers").val();
+        let transmission=$("#txttransmission").val();
+        let Fuel=$("#txtfuel").val();
+        let DaliyRate =$("#txtdaliyrate").val();
+        let MonthlyRate=$("#txtmonthlyrate").val();
+        let FreekmForDay=$("#txtfreekmforday").val();
+        let FreekmForMonth =$("#txtfreekmformonth").val();
+        let PricePerExtraKm=$("#txtpriceperextrakm").val();
+        let Registrationnumber=$("#txtregistationnum").val();
+        let  Color=$("#txtcolor").val();
+
+        $.ajax({
+            method:"PUT",
+            url:"http://localhost:8082/CRS/api/v1/car",
+            contentType:"application/json",
+            async:true,
+            data:JSON.stringify({
+                cid:CarID,
+                carbrand: CarBrand,
+                cartype:CarType,
+                passengers:Passengers,
+                transmission:transmission,
+                fuel:Fuel,
+                daliyrate:DaliyRate,
+                monthlyrate:MonthlyRate,
+                freekmforday:FreekmForDay,
+                Freekmformonth:FreekmForMonth,
+                priceperextrakm:PricePerExtraKm ,
+                registrationnum:Registrationnumber,
+                color:Color
+            }),
+            success:function (data) {
+                console.log(data);
+
+                loadAllCars();
+            }
+        });
+
+    });
+
+
+</script>
+<script>
+    /*var dashbord=document.getElementById("dashbord")*/
+    var das = document.getElementById("dash");
+    var driver = document.getElementById("driverContent");
+    var item = document.getElementById("itemContent");
+    var order=document.getElementById("orderContent");
+   var login =document.getElementById("loginContent");
+    var addcar=document.getElementById("addCarContent");
+     var addCus=document.getElementById("customerContent");
+  var singin=document.getElementById("singContent");
+
+
+
+
+
+    das.style.display='none';
+    driver.style.display='none';
+    item.style.display='none';
+    order.style.display='none';
+    login.style.display='none';
+    addcar.style.display='none';
+    addCus.style.display='none';
+    singin.style.display='none';
+
+
+
+
+   var dt=document.getElementById("dt");
+    dt.addEventListener('click',function (){
+        dashbord.style.display='block'
+        item.style.display='none';
+        driver.style.display='none';
+        order.style.display='none';
+        login.style.display='none';
+        addcar.style.display='none';
+        addCus.style.display='none';
+        das.style.display='none';
+        singin.style.display='none';
+    });
+
+    var ds=document.getElementById("ds");
+    ds.addEventListener('click',function (){
+        das.style.display='block'
+        dashbord.style.display='none';
+        item.style.display='none';
+        driver.style.display='none';
+        order.style.display='none';
+        login.style.display='none';
+        addcar.style.display='none';
+        addCus.style.display='none';
+        singin.style.display='none';
+    });
+
+
+    var lo=document.getElementById("lo");
+    lo.addEventListener('click',function (){
+        login.style.display='block'
+        dashbord.style.display='none';
+        item.style.display='none';
+        driver.style.display='none';
+        order.style.display='none';
+        addcar.style.display='none';
+        addCus.style.display='none';
+        das.style.display='none';
+        singin.style.display='none';
+    });
+
+
+    var dr=document.getElementById("dr");
+    dr.addEventListener('click',function (){
+        dashbord.style.display='none';
+        item.style.display='none';
+        driver.style.display='block';
+        order.style.display='none';
+        login.style.display='none';
+        addcar.style.display='none';
+        addCus.style.display='none';
+        das.style.display='none';
+        singin.style.display='none';
+    });
+
+
+    var it=document.getElementById("it");
+
+    it.addEventListener('click',function (){
+        dashbord.style.display='none';
+        driver.style.display='none';
+        item.style.display='block';
+        order.style.display='none';
+        login.style.display='none';
+        addcar.style.display='none';
+        addCus.style.display='none';
+        das.style.display='none';
+        singin.style.display='none';
+    });
+    var ot=document.getElementById("ot");
+    ot.addEventListener('click',function (){
+        dashbord.style.display='none';
+        driver.style.display='none';
+        item.style.display='none';
+        order.style.display='block';
+        login.style.display='none';
+        addcar.style.display='none';
+        addCus.style.display='none';
+        das.style.display='none';
+        singin.style.display='none';
+    });
+
+    var ac=document.getElementById("ac");
+    ac.addEventListener('click',function (){
+        dashbord.style.display='none';
+        driver.style.display='none';
+        item.style.display='none';
+        order.style.display='none';
+        login.style.display='none';
+        addcar.style.display='block';
+        addCus.style.display='none';
+        das.style.display='none';
+        singin.style.display='none';
+    });
+
+
+
+    var cu =document.getElementById("cu");
+    cu.addEventListener('click',function () {
+        dashbord.style.display='none';
+        driver.style.display='none';
+        item.style.display='none';
+        order.style.display='none';
+        login.style.display='none';
+        addcar.style.display='none';
+        addCus.style.display='block';
+        das.style.display='none';
+        singin.style.display='none';
+    })
+
+    var si =document.getElementById("si");
+    /*si.addEventListener('click',function () {
+        dashbord.style.display='none';
+        driver.style.display='none';
+        item.style.display='none';
+        order.style.display='none';
+        login.style.display='none';
+        addcar.style.display='none';
+        addCus.style.display='none';
+        das.style.display='none';
+        singin.style.display='block';
+    })*/
+
+</script>
+
+</body>
+</html>

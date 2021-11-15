@@ -1,0 +1,141 @@
+/* Container needed to position the overlay. Adjust the width as needed */
+.container {
+    position: relative;
+    width: 80%;
+}
+
+/* Make the image to responsive */
+.image {
+    width: 100%;
+    height: 100%;
+}
+
+/* The overlay effect (full height and width) - lays on top of the container and over the image */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  /* background-color: darkgrey;*/
+    background-image: linear-gradient(gainsboro,black,lightgray);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transition: .3s ease;
+}
+
+/* When you mouse over the container, the overlay text will "zoom" in display */
+.container:hover .overlay {
+    transform: scale(1);
+}
+
+/* Some text inside the overlay, which is positioned in the middle vertically and horizontally */
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.Bbutton{
+    background-image: linear-gradient(darkgreen,#b6d4fe,navy);
+    font-size:20px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    height: 50px;
+    width: 150px;
+    top: 300px;
+    font-family:"Rockwell Extra Bold";
+    /*border-radius: 30%;*/
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px black;
+}
+.Bbutton:active {
+
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+.h1text{
+
+    font-size: 20px;
+    font-weight: bold;
+    font-family:"Abadi MT Condensed Light";
+
+
+}
+.h6{
+    font-size: 20px;
+    font-weight: bold;
+
+}
+/*#N0R{
+    background-image: linear-gradient(black,white,grey);
+}
+#NOS{
+    background-image: linear-gradient(black,white,grey);
+}*/
+.flex-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.single-chart {
+    width: 33%;
+    justify-content: space-around ;
+}
+
+.circular-chart {
+    display: block;
+    margin: 10px auto;
+    max-width: 80%;
+    max-height: 150px;
+}
+
+.circle-bg {
+    fill: none;
+    stroke: #eee;
+    stroke-width: 3.8;
+}
+
+.circle {
+    fill: none;
+    stroke-width: 2.8;
+    stroke-linecap: round;
+    animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+    0% {
+        stroke-dasharray: 0 100;
+    }
+}
+
+.circular-chart.orange .circle {
+    stroke: #ff9f00;
+}
+
+.circular-chart.green .circle {
+    stroke: #4CC790;
+}
+
+.circular-chart.blue .circle {
+    stroke: #3c9ee5;
+}
+
+.circular-chart.red .circle {
+    stroke: red;
+}
+
+
+.percentage {
+    fill: #666;
+    font-family: sans-serif;
+    font-size: 0.5em;
+    text-anchor: middle;
+}

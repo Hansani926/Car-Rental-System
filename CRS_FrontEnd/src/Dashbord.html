@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="asserts/css/bootstrap.min.css" rel="stylesheet">
+    <link href="asserts/css1/normalize.css" rel="stylesheet">
+    <style>
+        #Homebar{
+            position: fixed;
+            display: block;
+
+            height: 80px;
+            width: 100%;
+            box-shadow: 5px 5px 20px 1px grey;
+            z-index: 2;
+            background-image: linear-gradient(orange,black);
+        }
+
+        .object {
+            animation: MoveUpDown 1s linear infinite;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+
+        @keyframes MoveUpDown {
+            0%, 100% {
+                bottom: 0;
+            }
+            50% {
+                bottom: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-12" id="dashbord" style="display: block">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary mb-3" id="Homebar">
+
+        <a class="navbar-brand" href="#">Car Rental  System</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav mr-auto">
+                <!--   <li class="nav-item active" id="dt">
+                       <a class="nav-link" href="#" > Home</a>
+
+                       <span class="sr-only"></span>
+                   </li>-->
+
+                <li class="nav-item" id="ds"  >
+                    <a class="nav-link" href="#" >
+                        DashBord
+                    </a>
+
+                </li>
+
+                <li class="nav-item" id="lo" >
+                    <a class="nav-link" href="Login.html" >Admin</a>
+
+                </li>
+
+
+
+                <li class="nav-item"  >
+                    <a class="nav-link" href="#carsection">Cars</a>
+
+                </li>
+
+
+            </ul>
+
+        </div>
+    </nav>
+    <img src="asserts/img/slider.jpg" height="530"  width="100%">
+
+
+    <section id="carsection">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <div class="card">
+                    <div class=" card-body" align="center">
+
+                        <img src="asserts/img/car7.jpg" width="72%" >
+
+
+                        <h5 class="card-title"> Audi A4</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">
+                            <p>Type-mini</p>
+                            <p>No of passengers-4</p>
+                            <p>Transmission-Auto</p>
+                            <p>Fuel-Petrol</p>
+                            <p>Free Km for a Day-200</p>
+                            <p>Free Km for a Month-3000</p>
+                        </h6>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <div class="card">
+                    <div class=" card-body" align="center">
+
+                        <img src="asserts/img/car2.jpg" width="92%">
+                        <h5 class="card-title">Hyundai Creta</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">
+                            <p>Type-mini</p>
+                            <p>No of passengers-4</p>
+                            <p>Transmission-Auto</p>
+                            <p>Fuel-Petrol</p>
+                            <p>Free Km for a Day-200</p>
+                            <p>Free Km for a Month-3000</p>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <div class="card">
+                    <div class=" card-body" align="center">
+                        <img src="asserts/img/car3.jpg" width="100%">
+                        <h5 class="card-title"> BMW 6-Series</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">
+                            <p>Type-mini</p>
+                            <p>No of passengers-4</p>
+                            <p>Transmission-Auto</p>
+                            <p>Fuel-Petrol</p>
+                            <p>Free Km for a Day-200</p>
+                            <p>Free Km for a Month-3000</p>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <div class="card">
+                    <div class=" card-body" align="center">
+                        <img src="asserts/img/car4.jpg" width="98%">
+                        <h5 class="card-title"> Ford EcoSport</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">
+                            <p>Type-mini</p>
+                            <p>No of passengers-4</p>
+                            <p>Transmission-Auto</p>
+                            <p>Fuel-Petrol</p>
+                            <p>Free Km for a Day-200</p>
+                            <p>Free Km for a Month-3000</p>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <div class="card">
+                    <div class=" card-body" align="center">
+                        <img src="asserts/img/car5.jpg" width="92%">
+                        <h5 class="card-title"> Suzuki</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">
+                            <p>Type-mini</p>
+                            <p>No of passengers-4</p>
+                            <p>Transmission-Auto</p>
+                            <p>Fuel-Petrol</p>
+                            <p>Free Km for a Day-200</p>
+                            <p>Free Km for a Month-3000</p>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <div class="card">
+                    <div class=" card-body" align="center">
+                        <img src="asserts/img/car6.jpg" width="73%">
+                        <h5 class="card-title"> Alto</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">
+                            <p>Type-mini</p>
+                            <p>No of passengers-4</p>
+                            <p>Transmission-Auto</p>
+                            <p>Fuel-Petrol</p>
+                            <p>Free Km for a Day-200</p>
+                            <p>Free Km for a Month-3000</p>
+
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <div class="card">
+                    <div class=" card-body" align="center">
+                        <img src="asserts/img/car7.jpg" width="62%">
+                        <h5 class="card-title"> Toyota</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">
+                            <p>Type-mini</p>
+                            <p>No of passengers-4</p>
+                            <p>Transmission-Auto</p>
+                            <p>Fuel-Petrol</p>
+                            <p>Free Km for a Day-200</p>
+                            <p>Free Km for a Month-3000</p>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <div class="card">
+                    <div class=" card-body" align="center">
+                        <img src="asserts/img/car8.jpg" width="75%">
+                        <h5 class="card-title"> Alto</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">
+                            <p>Type-mini</p>
+                            <p>No of passengers-4</p>
+                            <p>Transmission-Auto</p>
+                            <p>Fuel-Petrol</p>
+                            <p>Free Km for a Day-200</p>
+                            <p>Free Km for a Month-3000</p>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <div class="card">
+                    <div class=" card-body" align="center">
+                        <img src="asserts/img/car9.jpg" width="65%">
+                        <h5 class="card-title"> Hybrid</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">
+                            <p>Type-mini</p>
+                            <p>No of passengers-4</p>
+                            <p>Transmission-Auto</p>
+                            <p>Fuel-Petrol</p>
+                            <p>Free Km for a Day-200</p>
+                            <p>Free Km for a Month-3000</p>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <div class="card">
+                    <div class=" card-body" align="center">
+                        <img src="asserts/img/car10.jpg" width="100%">
+                        <h5 class="card-title"> Toyota</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">
+                            <p>Type-mini</p>
+                            <p>No of passengers-4</p>
+                            <p>Transmission-Auto</p>
+                            <p>Fuel-Petrol</p>
+                            <p>Free Km for a Day-200</p>
+                            <p>Free Km for a Month-3000</p>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <div class="card">
+                    <div class=" card-body" align="center">
+                        <img src="asserts/img/car11.jpg" width="76%">
+                        <h5 class="card-title"> Kwid</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">
+                            <p>Type-mini</p>
+                            <p>No of passengers-4</p>
+                            <p>Transmission-Auto</p>
+                            <p>Fuel-Petrol</p>
+                            <p>Free Km for a Day-200</p>
+                            <p>Free Km for a Month-3000</p>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <div class="card">
+                    <div class=" card-body" align="center">
+                        <img src="asserts/img/car12.jpg" width="50%">
+                        <h5 class="card-title"> Nano</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">
+                            <p>Type-mini</p>
+                            <p>No of passengers-4</p>
+                            <p>Transmission-Auto</p>
+                            <p>Fuel-Petrol</p>
+                            <p>Free Km for a Day-200</p>
+                            <p>Free Km for a Month-3000</p>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+
+
+
+<script src="asserts/js/jquery-3.6.0.min.js"></script>
+
+</body>
+</html>
